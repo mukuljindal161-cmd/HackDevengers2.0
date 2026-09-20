@@ -409,17 +409,22 @@ export const CommandCenterPage: React.FC = () => {
                       id: 'disc-personalized-gate-route4',
                       workspace_id: workspaceId || '',
                       title: 'Commute-Exam Collision',
+                      description: 'Main Gate closure detour delays Route 4 shuttle, causing student to arrive 35 minutes late for Midterm Exam.',
                       type: 'contradiction',
                       severity: 'high',
                       impact_score: 96,
-                      explanation_chain: [
-                        { step: 1, claim: 'Official Exam Schedule schedules Midterm on Sept 20 at 09:30 AM in Hall B', source_id: 'notice-exam', document_name: 'Academic Notice 2026/04' },
-                        { step: 2, claim: 'Main Gate Maintenance completely closes North Hostel pedestrian/shuttle access Sept 18-22', source_id: 'notice-gate', document_name: 'Admin Order 2026/11' },
-                        { step: 3, claim: 'Shuttle Route 4 is detoured via South Ring adding 35 minutes delay', source_id: 'notice-shuttle', document_name: 'Transport Circular 2026/02' },
-                        { step: 4, claim: 'Student will arrive at 10:05 AM (35 mins late) missing mandatory hall entry gate', source_id: 'notice-exam', document_name: 'Synthesis Deduction' },
+                      confidence: 0.94,
+                      status: 'active',
+                      evidence: ['Academic Notice 2026/04', 'Admin Order 2026/11', 'Transport Circular 2026/02'],
+                      reasoning: [
+                        { step: 1, statement: 'Official Exam Schedule schedules Midterm on Sept 20 at 09:30 AM in Hall B' },
+                        { step: 2, statement: 'Main Gate Maintenance completely closes North Hostel pedestrian/shuttle access Sept 18-22' },
+                        { step: 3, statement: 'Shuttle Route 4 is detoured via South Ring adding 35 minutes delay' },
+                        { step: 4, statement: 'Student will arrive at 10:05 AM (35 mins late) missing mandatory hall entry gate' },
                       ],
-                      sources: ['Academic Notice 2026/04', 'Admin Order 2026/11', 'Transport Circular 2026/02'],
-                      detected_at: new Date().toISOString()
+                      affected_entities: ['Main Gate', 'Route 4 Shuttle', 'Mid-Semester Exam'],
+                      recommended_actions: ['Depart hostel by 07:45 AM', 'Use East Gate pedestrian corridor'],
+                      created_at: new Date().toISOString()
                     };
                     setSelectedDiscoveryForWhy(sampleDisc);
                   }}
