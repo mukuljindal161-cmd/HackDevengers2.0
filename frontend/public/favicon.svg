@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131C28" />
+      <stop offset="100%" stop-color="#080D14" />
+    </linearGradient>
+    <linearGradient id="stem" x1="28" y1="28" x2="28" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+    <linearGradient id="loop" x1="28" y1="28" x2="72" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+    <linearGradient id="diag1" x1="72" y1="28" x2="46" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="diag2" x1="46" y1="50" x2="74" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="92" height="92" rx="22" fill="url(#bg)" stroke="#1F2937" stroke-width="2" />
+  
+  <line x1="28" y1="28" x2="28" y2="72" stroke="url(#stem)" stroke-width="7" stroke-linecap="round" />
+  <line x1="28" y1="28" x2="72" y2="28" stroke="url(#loop)" stroke-width="7" stroke-linecap="round" />
+  <line x1="72" y1="28" x2="46" y2="50" stroke="url(#diag1)" stroke-width="7" stroke-linecap="round" />
+  <line x1="46" y1="50" x2="74" y2="72" stroke="url(#diag2)" stroke-width="7" stroke-linecap="round" />
+
+  <circle cx="28" cy="28" r="9" fill="#38BDF8" />
+  <circle cx="72" cy="28" r="9" fill="#FFFFFF" />
+  <circle cx="46" cy="50" r="8.5" fill="#3B82F6" />
+  <circle cx="28" cy="72" r="9" fill="#FFFFFF" />
+  <circle cx="74" cy="72" r="9" fill="#2563EB" />
+</svg>

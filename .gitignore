@@ -1,0 +1,26 @@
+# Python
+backend/.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+backend/storage/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Env & Database
+.env
+realitygraph.db
+*.db
+
+# Audit report
+RealityGraph_System_Audit_and_Architecture_Report.md
+
+# System / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
