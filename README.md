@@ -117,8 +117,10 @@ Development: Google Antigravity
 
 ⚙️ Setup
 
+```bash
 git clone https://github.com/mukuljindal161-cmd/HackDevengers2.0/
 cd RealityGraph
+```
 
 Create your environment file:
 
